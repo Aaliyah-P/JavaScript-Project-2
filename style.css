@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+
+body{
+  background-color: blueviolet;
+/* smoothly transition background colour */
+ transition: background-color .7s;
+}
+
+
+/* using flex with the column direction to align items in vertical direction */
+.player{
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p{
+  font-size: 45px;
+  font-weight: bolder;
+  
+}
+
+
+.details {
+  font-family:"Tac One", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 35px;
+  height:450px;
+  width: 450px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/01/21/50/headphones-7893161_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.now-playing{
+  font-size: 2rem;
+}
+
+.track-name{
+  font-size: 3rem;
+}
+
+.track-artist{
+  font-size: 1.5rem;
+}
+
+
+/* Using flex with row direction to align items in a horizontal direction */
+
+.buttons {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.playpause-track,.prev-track, .next-track{
+   padding-left: 40px;
+   opacity: 0.8;
+   /* smoothly transition the opacity*/
+   transition: opacity .2s;
+}
+
+
+
+/* changing the opacity of the buttons when hovered over */
+.playpause-track:hover,
+.prev-track:hover, 
+.next-track:hover{
+  opacity: 1.0;
+}
+
+
+/* Define the slider width so that it scales properly*/
+.slider_container {
+  width:75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none;
+  height: 4.5px;
+  background-color: black;
+
+}
+
+/*modify the apperance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  width: 3px;
+  height: 14px;
+  cursor: pointer;
+}
+
+
+/* changing the opactity when hovered over */
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+
+.seek_slider {
+   width: 60%;
+}
+
+.volume_slider {
+ width: 30%;
+}
+
+.current-time,
+.total-duration {
+ padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
