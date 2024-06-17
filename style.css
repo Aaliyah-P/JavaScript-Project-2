@@ -147,3 +147,27 @@ i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
 }
+
+
+/* ---------------------------------------------------------------- CSS FOR SMALL DEVICES ------------------------------------------------------ */
+@media only screen and (max-width: 500px)  {
+  .track-art {
+    margin: 25px;
+    height:300px;
+    width: 300px;
+    background-image: url("https://cdn.pixabay.com/photo/2023/04/01/21/50/headphones-7893161_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+  }
+
+ p{
+  font-size: 35px;
+  
+ }
+
+ .now-playing{
+  font-size: 1.5rem;
+}
+
+}
